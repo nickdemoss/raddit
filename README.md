@@ -1,4 +1,6 @@
 # raddit
-A place for backwards rabbit
+A place for backwards rabbita
 
-U of A IT readiness class project, totally not a ripoff of Reddit. 
+U of A IT Readiness
+
+Front-End Class learning front endy things.

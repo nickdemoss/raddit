@@ -1,13 +1,7 @@
 <html>
   <head>
-    <title>Raddit</title>
+    <title>Create New Post</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -87,42 +81,40 @@
       </div>
     </nav>
 
-    <br />
-    <hr />
-    <h2>Food:</h2>
-    A place to talk about food.
-    <br />
-    <div class="blog-post blog-visited">
-      <h3>Pizza is delicious<i class="fas fa-pizza-slice"></i></h3>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
-    </div>
-    <br />
-    <div class="blog-post">
-      <h3>Burgers are meh</h3>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
-    </div>
-
-    <br />
-    <h6>Copyright 2019: Front-End Class</h6>
+    <form
+      class="create-form"
+      name="create-form"
+      action="create.html"
+      method="POST"
+    >
+      <span class="form-label">Post Title</span>
+      <br />
+      <input
+        type="text"
+        name="post-title"
+        class="form-data"
+        placeholder="Enter post title, please."
+      />
+      <small id="emailHelp" class="form-text text-muted"
+        >We'll never share your post title with anyone else.</small
+      >
+      <br />
+      <span class="form-label">Post Body</span>
+      <br />
+      <textarea
+        name="post-body"
+        class="form-data"
+        placeholder="Enter post body, please."
+      ></textarea>
+      <br />
+      <span class="form-label">Public?</span>
+      <input type="checkbox" name="publicity" />
+      <br />
+      <span class="form-label">Bun</span><br />
+      <input type="radio" name="bun" value="Food" />Food<br />
+      <input type="radio" name="bun" value="Drink" />Drink<br />
+      <br />
+      <input type="submit" value="Create" class="btn btn-success" />
+    </form>
   </body>
 </html>
